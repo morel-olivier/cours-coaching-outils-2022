@@ -18,6 +18,11 @@ Apprentissage
 - L'étudiant est capable de faire des commits, de créer des branches et de push sur github.com
 - l'étudiant est capable de merge 2 branches.
 
+### Latex
+- L'étudiant posséde les informations pour installer texlive et configurer un environnement de développement su VS code
+- L'étudiant est capable de créer un document de base sur la base du modéle de Antonin
+- L'étudiant est capable d'utiliser pythontex et siunitx
+
 ## Moyens didactique
 Le cours sera donné sous la forme d'une ou plusieurs présentations dont les supports seront accessibles (internet ou cloud coaching).
 
