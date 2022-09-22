@@ -14,7 +14,7 @@ Apprentissage
 ## Objectif
 ### Git
 - L'étudiant comprend les avantages de l'utilsation d'un systéme de contrôle de version (collaboration, versionning, sauvegarde)
-- L'étudiant est capable de créer un repository au moyen de github.com ou GitHub Desktop.
+- L'étudiant est capable de créer un repository au moyen de github.com, GitHub Desktop, Git ou GitHub CLI.
 - L'étudiant est capable de faire des commits, de créer des branches et de push sur github.com
 - l'étudiant est capable de merge 2 branches.
 
@@ -27,4 +27,5 @@ Apprentissage
 Le cours sera donné sous la forme d'une ou plusieurs présentations dont les supports seront accessibles (internet ou cloud coaching).
 
 ## Dispositions particulières
-aucune
+Attention, les différentes sections n'utilisent pas les mêmes outils.
+Comment intégrer les différents outils dans le cours?
