@@ -11,7 +11,7 @@ Eléve de 1ère, 2ème et evt. 3ème.
 ## Nivau de formation
 Apprentissage
 
-## Objectif
+## Objectifs
 ### Git
 - L'étudiant comprend les avantages de l'utilsation d'un systéme de contrôle de version (collaboration, versionning, sauvegarde)
 - L'étudiant est capable de créer un repository au moyen de github.com, GitHub Desktop, Git ou GitHub CLI.
