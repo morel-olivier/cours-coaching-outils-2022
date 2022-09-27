@@ -1,0 +1,167 @@
+% Document basé sur l'exemple generic-ornate-15min-45min.fr créé par Till Tantau <tantau@users.sourceforge.net> et traduit par Philippe De Sousa <philippejjg@free.fr>.
+%https://github.com/josephwright/beamer/blob/main/doc/solutions/generic-talks/generic-ornate-15min-45min.fr.tex
+
+
+\documentclass{beamer}
+
+\mode<presentation> {
+  \usetheme{Warsaw}
+  %\setbeamercovered{transparent}	% donne un aperçu des élement cachés en transparence
+}
+
+\setbeameroption{show notes on second screen}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{}
+
+\title{Introduction à Git}
+
+\author
+{Olivier Morel \and S.~Lautre}
+% - Composez les noms dans l'ordre dans lequel ils apparaîtrons dans l'article
+
+\date[Version courte]
+{Date / Cours du coaching}
+
+\subject{Git}
+% Inséré uniquement dans la page d'information du fichier PDF.
+
+
+% TODO: Add logo AGE
+
+% Si vous avez un fichier nommé "université-logo-nomfichier.xxx", où xxx
+% est un format graphique accepté par latex ou pdflatex (comme par exemple .png),
+% alors vous pouvez insérer votre logo ainsi :
+
+% \pgfdeclareimage[height=0.5cm]{le-logo}{université-logo-nomfichier}
+% \logo{\pgfuseimage{le-logo}}
+
+% Si vous souhaitez recouvrir vos transparents un à un,
+% utilisez la commande suivante (pour plus d'info, voir la page 74 du manuel
+% d'utilisation de Beamer (version 3.06) par Till Tantau) :
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Sommaire}
+	\tableofcontents
+	% Vous pouvez, si vous le souhaiter ajouter l'option [pausesections]
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Gestion de versions, qu'est ce que c'est?}
+
+\end{frame}
+
+\begin{frame}{Git}
+	
+\end{frame}
+
+\begin{frame}{Git is not GitHub}
+
+\end{frame}
+
+\begin{frame}{Installation}
+	
+\end{frame}
+
+\section{Création de repository}
+\begin{frame}{Structure d'un repository}
+	
+\end{frame}
+
+\begin{frame}{Créer un repository}
+	
+\end{frame}
+
+\section{Travailler avec Git}
+\begin{frame}{Les différents états de git}
+	% TODO: add graph like this: https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;
+\end{frame}
+
+\begin{frame}{Staging}
+	
+\end{frame}
+
+\begin{frame}{Commiting}
+	
+\end{frame}
+
+\begin{frame}{Branching}
+	
+\end{frame}
+
+\begin{frame}{Merging}
+	
+\end{frame}
+
+\section{Travailler avec GitHub}
+\begin{frame}{GitHub}
+	
+\end{frame}
+
+\begin{frame}{Ajouter un repository sur GitHub}
+
+\end{frame}
+
+\begin{frame}{Fetching}
+	
+\end{frame}
+
+\begin{frame}{Pushing}
+	
+\end{frame}
+
+
+\section{Résumé}
+\begin{frame}{Résumé}
+
+\end{frame}
+
+\begin{frame}{Quelques liens utiles}
+	
+\end{frame}
+
+\end{document}
+
+
+% used as reference
+\begin{frame}{Faîtes des titres qui informent}
+
+	Vous pouvez créer des recouvrements\dots
+	\begin{itemize}
+	\item en utilisant la commande \texttt{pause} :
+	  \begin{itemize}
+	  \item
+		Premier item.
+		\pause
+	  \item
+		Second item.
+	  \end{itemize}
+	\item
+	  en utilisant les spécifications des recouvrements
+	  \begin{itemize}
+	  \item<3->
+		Premier item.
+	  \item<4->
+		Second item.
+	  \end{itemize}
+	\item
+	  en utilisant en général la commande \texttt{uncover} :
+	  \begin{itemize}
+		\uncover<5->{\item
+		  Premier item.}
+		\uncover<6->{\item
+		  Second item.}
+	  \end{itemize}
+	\end{itemize}
+  \end{frame}
