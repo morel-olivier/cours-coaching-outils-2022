@@ -5,7 +5,7 @@
 \documentclass{beamer}
 
 \mode<presentation> {
-  \usetheme{Warsaw}
+  \usetheme{Warsaw}	% use metropolis
   %\setbeamercovered{transparent}	% donne un aperçu des élement cachés en transparence
 }
 
@@ -15,7 +15,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-\usepackage{}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=black,
+	urlcolor=blue,
+	breaklinks=true,
+}
 
 \title{Introduction à Git}
 
@@ -51,6 +59,8 @@
 	\titlepage
 \end{frame}
 
+% TODO: add objectifs
+
 \begin{frame}{Sommaire}
 	\tableofcontents
 	% Vous pouvez, si vous le souhaiter ajouter l'option [pausesections]
@@ -58,20 +68,70 @@
 
 \section{Introduction}
 
-\begin{frame}{Gestion de versions, qu'est ce que c'est?}
-
+\begin{frame}{Gestion de versions, qu'est-ce que c'est ?}
+	\begin{itemize}
+		\item Gestion des changements sur un projet
+		\note[item]{La gestion de version consiste à gérer les changements sur un fichier ou un ensemble de fichiers (un projet).}
+		\item Permet de :
+			\begin{itemize}
+				\item Revoir les changements déjà fait
+				
+				\item Annuler des changements problématiques
+				\note[item]{Cela permet de revoir les changements, voir de les annuler.}
+				\item Collaborer avec plusieurs personnes sur le même projet
+				\note[item]{On peut facilement gérer des modifications qui viennent de différentes personnes en même temps}
+			\end{itemize}
+		\item Il existe de nombreux systèmes
+			\begin{itemize}
+				\item Copier-coller le dossier et le renommer "projet-vx"
+				\item SVN
+				\item Git
+			\end{itemize}
+	\end{itemize}
 \end{frame}
-
-\begin{frame}{Git}
 	
+\begin{frame}{Git}
+	\begin{itemize}
+		\item Créé en 2005 par Linus Torvalds pour le développement du Kernel Linux
+		\item Appartient à la catégorie des systèmes de contrôle de version \textbf{distribué}
+		\note[item]{C'est un système distribué. Cela veut dire que chaque utilisateur possède une copie complète du projet. Ce qui permet de ne pas dépendre d'un serveur central.}
+		\item C'est un des systèmes les plus utilisés dans le monde, encore plus l'open source
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Git is not GitHub}
-
+\begin{itemize}
+	\item Git est l'outil de base
+	\item Un serveur peut être connecté pour collaborer
+	\item GitHub fourni un service de serveur
+\end{itemize}
+% TODO: add the picture
 \end{frame}
 
 \begin{frame}{Installation}
-	
+	\textbf{Windows et Mac OS}
+
+	\begin{tabularx}{\textwidth}{Xr}
+	\url{https://desktop.github.com/}	& GUI 	\\
+	\url{https://git-scm.com/downloads}	& CLI
+	\end{tabularx}
+
+	\bigskip
+
+	\textbf{Linux}
+
+	\begin{tabularx}{\textwidth}{Xr}
+		\url{https://git-scm.com/download/linux}	& CLI 	\\
+		\href{https://cloudaffaire.com/how-to-install-and-configure-github-cli-gh/}{cloud affaire}		& CLI officielle pour GitHub
+	\end{tabularx}
+
+	\bigskip
+
+	\textbf{Extension VS Code}
+
+	VS Code intègre déjà beaucoup de chose pour travailler avec Git.
+
+	L'extension \href{https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens}{GitLens} offre quelques fonctionnalités bien pratiques.
 \end{frame}
 
 \section{Création de repository}
